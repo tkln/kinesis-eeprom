@@ -226,3 +226,9 @@ def find_key_label(keycode):
         if code == keycode:
             return label
     return None
+
+def find_key_code(keylabel):
+    for (label, code) in label_codes:
+        if label == keylabel:
+            return code
+    return None
